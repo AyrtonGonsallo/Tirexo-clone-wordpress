@@ -1,0 +1,75 @@
+﻿/*
+Theme Name: Tirexo Ayrton - 2022
+Author: Gonsallo Ayrton
+Theme URI: 
+Description: Template crée par Gonsallo Ayrton"
+Version: 1
+Tags: green, fresh, fun
+*/
+
+
+
+
+html, body {
+	padding: 0 0 0 0;
+	margin: 0 30px 0 30px;
+}
+body {
+	font-family:Arial,Verdana,sans-serif;
+	background: #000000 ;
+	padding: 0 0 0 0;
+	margin:0px;
+	color:#ffffff;
+	font-size:1em; /*body font size = 10 pixels -- Plus simple pour convertir px en em */
+}
+
+a {
+text-decoration : none;
+}
+
+img {
+border:none;
+}
+
+#header{
+    background: #000000 ;
+    color:#ffffff;
+    border-bottom: dashed 1px;
+}
+#titre{
+    font-size: large;
+    font-weight: bolder;
+}
+h1,h2,h3{
+    color:#e8b316
+}
+.cadre{
+    border: dotted 1px;
+}
+.footer{
+	margin-top: 50px;
+}
+h4{
+	color: rgb(0, 202, 77);
+}
+#langue-single{
+	color: rgb(36, 175, 245);
+}
+#qualite-single{
+	color: rgb(68, 154, 37);
+}
+#infos-single{
+	background-color: rgb(89, 89, 87);
+	color: #ffffff;
+	border-radius: 10px;
+}
+#type-single{
+	border-bottom: solid;
+}
+.attribut{
+	color: #fdc009ef;
+}
+.laterale{
+	background-color: rgb(90, 88, 88,0.7);
+	border-radius: 10px;
+}
