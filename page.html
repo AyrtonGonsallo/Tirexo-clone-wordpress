@@ -78,15 +78,82 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <a href="#" title="Header" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Popover text">Hover over me</a>
 
+        </div>
+
+        -------------------------------------   parte 2     ---------------------------
+<div class="container">
+            <div class="row">
+                <div class="splide2">
+                    <div class="splide__track">
+                        <div class="splide__list">
+                            <div class="col-sm-3 splide__slide m-2 " data-bs-toggle="popover" title="Popover title" data-bs-trigger="hover" data-bs-content="And here's some amazing content.">
+                                <div  >
+                                    
+                                        <img class="image card-img" src="https://www.tirexo.blue/img/series/806d582177da7a34a843f5853f3e92d8.jpg" width="100%" heigth="auto"  alt="...">  
+                                        
+                                        <div class="card-img-overlay">
+                                            <span class="badge bg-danger">2000</span>
+                                        </div>
+                                        
+
+                                </div><h5 >Hannibal</h5>
+                                <i class="bi bi-star-fill etoile"></i>
+                                <i class="bi bi-star-fill etoile"></i>
+                                <i class="bi bi-star-half etoile"></i>
+                                <i class="bi bi-star etoile"></i>
+                                <i class="bi bi-star etoile"></i>
+                                2,5/5
+                            </div>
+                            <div class="col-sm-3 splide__slide m-2">
+                                <div >
+                                    
+                                        <img class="image" src="https://www.tirexo.blue/img/series/a20445305f69c16c4f5f5cd6260677f1.jpg" width="100%" heigth="auto"  alt="...">   
+                                    
+                                </div>
+                            </div>
+                            <div class="col-sm-3 splide__slide m-2">
+                                <div >
+                                    
+                                        <img class="image" src="https://www.tirexo.blue/img/series/e72370bdf7eee5001ec23f3b304ba0b0.jpg" width="100%" heigth="auto"  alt="...">
+                                </div>
+                            </div>
+                            <div class="col-sm-3 splide__slide m-2">
+                                <div >
+                                    
+                                        <img class="image" src="https://www.tirexo.blue/img/series/3ce647004ec16e709282084fd0b00b57.jpg" width="100%" heigth="auto"  alt="...">
+                                    
+                                </div>
+                            </div>
+                            <div class="col-sm-3 splide__slide m-2">
+                                <div >
+                                    
+                                        <img class="image" src="https://www.tirexo.blue/img/series/bdb94b8285c4fe9e19d643ec509fdbd4.jpg" width="100%" heigth="auto"  alt="...">
+                                    
+                                </div>
+                            </div>
+                            <div class="col-sm-3 splide__slide m-2">
+                                <div >
+                                    
+                                        <img class="image" src="https://www.tirexo.blue/img/series/1e18f8c0f32251a6812a2a4195a7c65e.jpg" width="100%" heigth="auto"  alt="...">
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
         <script>
             
             var splide = new Splide('.splide', {
                 type: 'loop',
-                perPage: 6,
+                perPage: 5,
+                pagination:false,
                 rewind: true,
                 breakpoints: {
                     992:{
@@ -94,23 +161,44 @@
                     },
                     640: {
                         perPage: 3,
-                        
-                        
                     },
                     480: {
                         perPage: 2,
-                        
-                        
                     },
                     380: {
                         perPage: 1,
-                        
-                        
+                    },
+                },
+            });
+             var splide2 = new Splide('.splide2', {
+                type: 'loop',
+                perPage: 4,
+                classes: {
+                        arrows: 'splide__arrows your-class-arrows',
+                        arrow : 'splide__arrow your-class-arrow',
+                        prev  : 'splide__arrow--prev your-class-prev',
+                        next  : 'splide__arrow--next your-class-next',
+                },
+                pagination:false,
+                rewind: true,
+                arrows:true,
+                breakpoints: {
+                    992:{
+                        perPage:4,
+                    },
+                    640: {
+                        perPage: 3,
+                    },
+                    480: {
+                        perPage: 2,
+                    },
+                    380: {
+                        perPage: 1,
                     },
                 },
             });
             splide.mount();
-            
+            splide2.mount();
         </script>
         <script>
             var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))

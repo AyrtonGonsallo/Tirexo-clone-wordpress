@@ -42,10 +42,10 @@ border:none;
 }
 h1,h2,h3{
     color:#e8b316
-}
+}/*
 .cadre{
     border: dotted 1px;
-}
+}*/
 .footer{
 	margin-top: 50px;
 }
@@ -88,6 +88,9 @@ h4{
 .link-pink{
 	color: pink;
 }
+.link-white{
+	color:white;
+}
 .link-orange{
 	color: rgb(255, 115, 0);
 }
@@ -109,3 +112,21 @@ color: rgb(37, 167, 14);
 	
 	}
    }
+   .fleches-carousel-derniers-films{
+	position:relative;
+	top:100px;
+   }
+   .fleches-carousel-films-MN{
+	position:relative;
+	top:100px;
+   }
+.error-template {padding: 40px 15px;text-align: center;}
+.error-actions {margin-top:15px;margin-bottom:15px;}
+.error-actions .btn { margin-right:10px; }
+.image-liste{
+	width: 150px;
+	height: 230px;
+	border-radius: 10px;
+	margin-left: 3px;
+	margin-right: 3px;
+}

@@ -1,17 +1,17 @@
---------------------------
+
 <div class="container footer">
-  <div class="row">
-    <div class="col">
+  <div class="row justify-content-center">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-12 text-center">
     <img src="<?php bloginfo('template_url'); ?>/medias/logozt.png" class="rounded mx-auto d-block" alt="logo" width="100%" heigth="auto">
     </div>
-    <div class="col">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-12 text-center">
     <h3 class="text-secondary">ABOUT</h3>
         <ul class="list-group list-group-flush liste">
             <li class="list-group-item text-success bg-transparent">Aide</li>
             <li class="list-group-item text-success bg-transparent"> InformationsMMCA</li>
         </ul>
     </div>
-    <div class="col">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-12 text-center">
     <h3 class="text-secondary">MENU</h3>
         <ul class="list-group list-group-flush liste">
             <li class="list-group-item text-success bg-transparent">Accueil</li>
@@ -26,7 +26,7 @@
             <li class="list-group-item text-success bg-transparent">AppMobiles</li>
         </ul>
     </div>
-    <div class="col">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-12 text-center">
         <h3 class="text-secondary">PARTOUT !</h3>
         <ul class="list-group list-group-flush liste">
             <li class="list-group-item text-secondary bg-transparent">Compatible Smart-TV.</li>
@@ -48,30 +48,9 @@
         <script>
             var splide = new Splide('.splide', {
                 type: 'loop',
-                perPage: 4,
-                rewind: true,
-                breakpoints: {
-                    1200:{
-                        perPage:2,
-                    },
-                    992:{
-                        perPage:2,
-                    },
-                    640: {
-                        perPage: 1,
-                        
-                        
-                    }
-                    
-                },
-            });
-            splide.mount();
-        </script>
-        <script>
-            var splide = new Splide('.splide2', {
-                type: 'loop',
                 perPage: 6,
                 rewind: true,
+                pagination:false,
                 breakpoints: {
                     1200:{
                         perPage:4,
@@ -81,14 +60,96 @@
                     },
                     640: {
                         perPage: 2,
-                        
-                        
                     }
-                    
                 },
             });
             splide.mount();
+            var splide2 = new Splide('.splide2', {
+                type: 'loop',
+                perPage: 4,
+                pagination:false,
+                rewind: true,
+                classes: {
+                        arrows: 'splide__arrows fleches-carousel-derniers-films',
+                },
+                breakpoints: {
+                    1200:{
+                        perPage:3,
+                    },
+                    992:{
+                        perPage:3,
+                    },
+                    640: {
+                        perPage: 2,
+                    }
+                },
+            });
+            splide2.mount();
+            var splide3 = new Splide('.splide3', {
+                type: 'loop',
+                perPage: 4,
+                pagination:false,
+                rewind: true,
+                classes: {
+                        arrows: 'splide__arrows fleches-carousel-films-MN',
+                },
+                breakpoints: {
+                    1200:{
+                        perPage:3,
+                    },
+                    992:{
+                        perPage:3,
+                    },
+                    640: {
+                        perPage: 2,
+                    }
+                },
+            });
+            splide3.mount();
+            var splide4 = new Splide('.splide4', {
+                type: 'loop',
+                perPage: 4,
+                pagination:false,
+                rewind: true,
+                classes: {
+                        arrows: 'splide__arrows fleches-carousel-derniers-films',
+                },
+                breakpoints: {
+                    1200:{
+                        perPage:3,
+                    },
+                    992:{
+                        perPage:3,
+                    },
+                    640: {
+                        perPage: 2,
+                    }
+                },
+            });
+            splide4.mount();
+            var splide5 = new Splide('.splide5', {
+                type: 'loop',
+                perPage: 4,
+                pagination:false,
+                rewind: true,
+                classes: {
+                        arrows: 'splide__arrows fleches-carousel-films-MN',
+                },
+                breakpoints: {
+                    1200:{
+                        perPage:3,
+                    },
+                    992:{
+                        perPage:3,
+                    },
+                    640: {
+                        perPage: 2,
+                    }
+                },
+            });
+            splide5.mount();
         </script>
+        
         
 </body>
 
